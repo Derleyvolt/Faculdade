@@ -2,6 +2,18 @@
 
 #define ll long long
 
+// sem usar vetor
+bool is_palindrome_ex(ll n) {
+    ll reverse = 0, num = n;
+    while(n) {
+        int r = n % 10;
+	n = n / 10;
+	reverse = reverse * 10 + r;    
+    }	
+    return reverse == num;	
+}
+
+// com vetor
 bool is_palindrome(ll n) {
 	int arr[10];
 	int it = 0;
