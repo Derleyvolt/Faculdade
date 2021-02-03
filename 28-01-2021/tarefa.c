@@ -106,7 +106,7 @@ long double comb_sort(int *arr, int n) {
 }
 
 int main() {
-    int n = 10000, k = 5;
+    int n = 22000, k = 1000;
     long double time_bubble = 0.0, time_insertion = 0.0, time_selection = 0.0, time_comb = 0.0;
     int a[n], b[n], c[n], d[n];
 
@@ -118,9 +118,9 @@ int main() {
     while(k--) {
         generate_random_sequence(a, b, c, d, n);
 
-        //time_bubble     += bubble_sort(a, n);
-        //time_insertion  += insertion_sort(b, n);
-        //time_selection  += selection_sort(c, n);
+        time_bubble     += bubble_sort(a, n);
+        time_insertion  += insertion_sort(b, n);
+        time_selection  += selection_sort(c, n);
         time_comb       += comb_sort(d, n);
     }
     printf("Bubble:     %Lf segundos\n", time_bubble);
