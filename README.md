@@ -1,2 +1,2 @@
 # Faculdade
-códigos feitos durante o curso de ciência da computação
+códigos feitos durante o curso de ciência da computação na UFC
