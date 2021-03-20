@@ -93,9 +93,9 @@ void agd_ordenar(struct List* list) {
     for(struct List* ptr = list; ptr != NULL; ptr = ptr->prox) {
         for(struct List* inner_ptr = ptr->prox; inner_ptr != NULL; inner_ptr = inner_ptr->prox) {
             if(strcmp(ptr->agenda.nome, inner_ptr->agenda.nome) > 0) {
-                char* temp             = ptr->agenda.nome;
-                ptr->agenda.nome       = inner_ptr->agenda.nome;
-                inner_ptr->agenda.nome = temp;
+                struct Agenda temp = ptr->agenda;
+                ptr->agenda = inner_ptr->agenda;
+                inner_ptr->agenda = temp;
             }
         }
     }
