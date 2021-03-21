@@ -31,6 +31,6 @@ void sqrt_decomp() {
 }
 
 int main() {
-    cout << "Hello worlds" << endl;
+    cout << "aaa" << endl;
     return 0;
 }
