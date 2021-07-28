@@ -1,0 +1,3 @@
+Pablo, todos os arquivos, com exceção do main.cpp, são do tipo header pois há funções parametrizadas neles e, portanto,
+precisam ser implementadas dentro dos mesmos. Além disso, não há necessidade de adicionar comandos extras na compilação
+visto que os arquivos .h são literalmente concatenados ao main.cpp no momento do link.
