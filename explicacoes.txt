@@ -1,1 +1,0 @@
-Bastar executar o comando make pra compilar o programa, o makefile já está configurado.
